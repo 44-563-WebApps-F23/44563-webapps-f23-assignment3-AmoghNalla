@@ -63,5 +63,26 @@
                     <td align="center">5</td>
                 </tr>
             </table>
+            <br>
+            <hr>
+            <h1>Adding a code snippet</h1>
+            <blockquote>
+                How to make a simple auto playing slide show with javascript?<br><br>
+                <a href="https://stackoverflow.com/questions/21222360/how-to-make-a-simple-auto-playing-slide-show-with-javascript">
+                    Quick Link to Stackoverflow Source code of the above question</a>
+            </blockquote>
+            <pre>
+                $("#slideshow > div:gt(0)").hide();
+
+                setInterval(function() { 
+                  $('#slideshow > div:first')
+                  .fadeOut(1000)
+                  .next()
+                  .fadeIn(1000)
+                  .end()
+                  .appendTo('#slideshow');
+                }, 3000);
+            </pre>
+            <blockquote><a href="https://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/"> Snippet Link to above code</a></blockquote>
         </body>
 </html>
